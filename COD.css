@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(COD-char.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 1.5rem 3rem;
+    z-index: 100;
+}
+.logos {
+    width: 340px;
+    height: auto;
+    margin-left: 2.9rem;
+}
+.nav-links{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+.nav-links a.games{
+    border-bottom:7.5px solid black;
+}
+.nav-links a.games:hover{
+    text-decoration: none;
+}
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: 800;
+    transition: opacity 0.3s;
+}
+.nav-links a:hover {
+    font-size: 2.3rem;
+    color: white;
+    text-decoration: underline;
+}
+.nav-links a.active {
+    border-bottom: 2px solid white;
+}
+.search-btn {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    transition: opacity 0.2s;
+}
+.search-btn:hover {
+    color: white;
+    opacity: 0.8;
+}
+.hero{
+    min-height: 100vh;
+    position: relative;
+    margin-top: 14rem;
+}
+.hero-content {
+    position: relative;
+    padding: 6rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-left: 4rem;
+}
+.game-title{
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.game-title span {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+.about-section {
+    max-width: 600px;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.about-section p {
+    font-size: 1.8rem;
+    word-spacing: 2px;
+}
+.trailer-section {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    max-width: 400px;
+    margin-top: 5rem;
+}
+.trailer-section h2 {
+    color: #000000;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.video-container {
+    position: relative;
+    aspect-ratio: 15/12;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.play-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 4.5rem;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(61, 61, 61, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.play-btn:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.5);
+}
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.67rem;
+    padding: 1.5rem 1.8rem;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 750;
+    transition:  0.2s;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: rgb(0, 0, 145);
+}
+.cta-button i{
+    font-size: 2.0rem;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 4rem 1rem;
+    }
+
+    .game-title {
+        font-size: 3rem;
+    }
+
+    .game-title span {
+        font-size: 2rem;
+    }
+
+    .trailer-section {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
